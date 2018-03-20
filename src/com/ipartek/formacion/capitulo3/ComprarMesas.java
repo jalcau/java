@@ -8,11 +8,12 @@ public class ComprarMesas {
 		System.out.println("----------------");
 
 		Mesa m1 = new Mesa();
-		Mesa m2 = new Mesa(1);
-		m1.numeroPatas = 8;
+		Mesa m2 = new Mesa();
 
 		System.out.println(m1.toString());
 		System.out.println(m2.toString());
+		m1.Suma();
+		// Mesa m3= new Mesa(Mesa.MATERIAL_ACERO)
 	}
 
 }
