@@ -60,7 +60,7 @@ public class Mesa {
 
 	public Mesa() {
 		super(); // Siempre se llama al constructor padre del objeto, en este caso Object
-		this.numeroPatas = 1;
+		this.numeroPatas = 4;
 		this.color = "blanco";
 		this.dimension = 1;
 		this.material = MATERIAL_MADERA;
@@ -80,7 +80,7 @@ public class Mesa {
 	}
 
 	public void setNumeroPatas(int numeroPatas) {
-		this.numeroPatas = (numeroPatas < 0) ? 0 : numeroPatas;
+		this.numeroPatas = (numeroPatas <= 0) ? 1 : numeroPatas;
 	}
 
 	@Override
@@ -88,7 +88,7 @@ public class Mesa {
 		return "Mesa [numeroPatas=" + numeroPatas + " Color=" + color + " material= " + material + " ]";
 	}
 
-	public void Suma() {
+	public int Suma() {
 
 		int precio;
 		int patas = getNumeroPatas();
@@ -128,6 +128,7 @@ public class Mesa {
 		precio_total = precio_material + precio_color + precio_patas + precio_dimension;
 
 		System.out.println(precio_total);
+		return precio_total;
 	}
 }
 
