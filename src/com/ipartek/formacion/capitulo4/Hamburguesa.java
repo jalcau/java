@@ -64,7 +64,7 @@ public class Hamburguesa {
 		} else {
 
 			for (int i = 0; i < aIngredientes.length; i++) {
-				if (this.aIngredientes[i].equals("lechuga"))
+				if (this.aIngredientes[i].equals(aNombres[i]))
 
 				{
 					precioIngrediente = precioIngrediente + PRECIO_LECHUGA;
